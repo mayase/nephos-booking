@@ -16,7 +16,7 @@ var source_js = [
     './source/client_code.js'
 ];
 var fonts = [
-    './bower_components/font-awesome/fonts/*.*'
+    //'../bower_components/font-awesome/fonts/*.*'
 ];
 var assets = [
     './source/assets/*.*',
@@ -83,7 +83,7 @@ gulp.task('one_js_source', ['scripts', 'templates'], function(){
 gulp.task('build', ['templates', 'scripts', 'styles', 'index', 'assets', 'fonts', 'one_js_source']);
 gulp.task('scripts', ['vendor_scripts', 'source_scripts']);
 
-var api_endpoints = ['api'];
+var api_endpoints = [];
 var backend_url = 'http://188.166.112.194:8080/';
 
 gulp.task('run', ['build', 'watch'], function() {

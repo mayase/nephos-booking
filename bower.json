@@ -17,13 +17,14 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "~4.4.0"
-  },
-  "overrides": {
-    "font-awesome": {
-      "main": [
-        "css/font-awesome.min.css"
-      ]
-    }
+//    "font-awesome": "~4.4.0",
+    "vue": "~1.0.12"
   }
+//  "overrides": {
+//    "font-awesome": {
+//      "main": [
+//        "css/font-awesome.min.css"
+//      ]
+//    }
+//  }
 }
