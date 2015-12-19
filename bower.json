@@ -1,0 +1,29 @@
+{
+  "name": "experts_catalogue",
+  "description": "experts_catalogue",
+  "main": "",
+  "authors": [
+    "Maxim Yakovlev",
+    "Alex Chang"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.4.0"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@text-white-color: #E2E2E2;
+.nphs-booking-wrapper, .nphs-booking-wrapper *{
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.nphs-booking-wrapper{
+  .nphs-day-picker{
+    background-color: #404040;
+    .nphs-day{
+      text-align: center;
+      float: left;
+      box-sizing: border-box;
+      border-bottom: 2px solid transparent;
+      font-size: 14px;
+      padding: 12px 0 6px;
+      margin: 0 10px;
+      line-height: 15px;
+      color: @text-white-color;
+      &.active{
+        border-bottom-color: red;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      &:not(.active):hover{
+        border-bottom-color: #A40000;
+      }
+
+      .nphs-day-date{
+        span{
+          font-size: 20px;
+        }
+      }
+      .nphs-day-label{
+        font-weight: bolder;
+      }
+    }
+  }
+  .nphs-tables{
+
+    background-color: #DEDEDE;
+    .nphs-table-wrapper{
+      padding: 10px;
+      float: left;
+      box-sizing: border-box;
+      @media (min-width: 0px) and (max-width: 480px) {
+        width: 100%;
+      }
+      @media (min-width: 480px) and (max-width: 768px) {
+        width: 50%;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 33.33%;
+      }
+      @media (min-width: 1024px) {
+        width: 20%;
+      }
+      .nphs-table{
+        background-color: #F5F5F5;
+        border-radius: 20px;
+        box-shadow: 0 0 10px gray;
+        overflow: hidden;
+
+        .nphs-table-header{
+          text-align: center;
+          font-weight: bolder;
+          padding: 10px 0;
+          position: relative;
+          .nphs-table-header-addon{
+            right: 20px;
+            top: 8px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
